@@ -115,19 +115,19 @@ To simulate data for initial testing:
 
 ## 🎨 Visual Showcase - A glimpse of Live Dashboard
 
-### 1. App Home (Before Upload)
+### 1. App Home (Before Uploading Datasets)
 
 ![App Home Before](images/app_before.png)
 
-### 2. Data Upload (Before)
+### 2. Data Upload (Before Uploading Datasets)
 
 ![Data Upload Before](images/data_upload_before.png)
 
-### 3. Data Upload (After)
+### 3. Data Upload (After Uploading Datasets)
 
 ![Data Upload After](images/data_upload_after.png)
 
-### 4. App Home (After Upload)
+### 4. App Home (After Uploading Datasets)
 
 ![App Home After](images/app_after.png)
 
