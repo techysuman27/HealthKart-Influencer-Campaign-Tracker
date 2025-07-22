@@ -113,6 +113,28 @@ To simulate data for initial testing:
 
 ---
 
+## 🎨 Visual Showcase - A glimpse of Live Dashboard
+
+### 1. App Home (Before Upload)
+
+![App Home Before](images/app_before.png)
+
+### 2. Data Upload (Before)
+
+![Data Upload Before](images/data_upload_before.png)
+
+### 3. Data Upload (After)
+
+![Data Upload After](images/data_upload_after.png)
+
+### 4. App Home (After Upload)
+
+![App Home After](images/app_after.png)
+
+> 🔗 **Explore more pages & generate insights:** [Live Dashboard](https://influencertracker-bysuman.streamlit.app)
+
+---
+
 ## 🚦 Usage Guide
 
 1. **Data Upload**
@@ -144,28 +166,6 @@ To simulate data for initial testing:
 6. **Export**
 
    * Download filtered tables as CSV or PDF for presentations.
-
----
-
-## 🎨 Visual Showcase - A glimpse of Live Dashboard
-
-### 1. App Home (Before Upload)
-
-![App Home Before](images/app_before.png)
-
-### 2. Data Upload (Before)
-
-!\[Data Upload Before]\(images/data\ upload\ before.png)
-
-### 3. Data Upload (After)
-
-!\[Data Upload After]\(images/data\ upload\ after.png)
-
-### 4. App Home (After Upload)
-
-!\[App Home After]\(images/app\ after.png)
-
-> 🔗 **Explore more pages & generate insights:** [Live Dashboard](https://influencertracker-bysuman.streamlit.app)
 
 ---
 
