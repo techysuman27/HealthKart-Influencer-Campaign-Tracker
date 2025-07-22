@@ -82,7 +82,7 @@ HealthKart runs influencer campaigns across platforms like Instagram, YouTube, T
 
 ### ER Diagram & Relationships
 
-![Data Modeling](images/data modeling.png)
+![Data Modeling](images/data_modeling.png)
 
 * **influencers** to **posts**: 1️⃣ → ⭐ (one influencer can have many posts).
 * **influencers** to **tracking\_data**: 1️⃣ → ⭐ (orders tracked per influencer.
