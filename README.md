@@ -25,7 +25,7 @@
 
 HealthKart Influencer Campaign Tracker is a dynamic, open‑source **Streamlit** dashboard built for marketing teams to ingest their own data, monitor campaign performance, calculate incremental ROAS, track influencer payouts, and unlock actionable insights—all in one place.
 
-🔗 **[Try the Live Demo](https://influencertracker-bysuman.streamlit.app)**
+🔗 [**Try the Live Demo**](https://influencertracker-bysuman.streamlit.app)
 
 ---
 
@@ -80,6 +80,29 @@ HealthKart runs influencer campaigns across platforms like Instagram, YouTube, T
 | **tracking\_data** | `source`, `campaign`, `influencer_id`, `user_id`, `product`, `date`, `orders`, `revenue`         |
 | **payouts**        | `influencer_id`, `basis` (`order`/`post`), `rate`, `orders`, `total_payout`                      |
 
+### ER Diagram & Relationships
+
+!\[Data Model Diagram]\(images/data\ modeling.png)
+
+* **influencers** to **posts**: 1️⃣ → ⭐ (one influencer can have many posts).
+* **influencers** to **tracking\_data**: 1️⃣ → ⭐ (orders tracked per influencer.
+* **influencers** to **payouts**: 1️⃣ → ⭐ (each influencer has multiple payout entries).
+* **posts** to **tracking\_data**: ⭐ → ⭐ via influencer\_id join (posts and tracking both link by influencer).
+
+### Synthetic Data Generator
+
+To simulate data for initial testing:
+
+1. **Open** `assets/Synthetic_data_generator.ipynb` in Jupyter.
+2. **Execute** all cells (or run headlessly with `nbconvert`).
+3. **Locate** generated CSVs in the **assets/** folder.
+
+\------------------ | ------------------------------------------------------------------------------------------------ |
+\| **influencers**    | `id`, `name`, `category`, `gender`, `follower_count`, `platform`                                 |
+\| **posts**          | `influencer_id`, `platform`, `date (YYYY-MM-DD)`, `url`, `caption`, `reach`, `likes`, `comments` |
+\| **tracking\_data** | `source`, `campaign`, `influencer_id`, `user_id`, `product`, `date`, `orders`, `revenue`         |
+\| **payouts**        | `influencer_id`, `basis` (`order`/`post`), `rate`, `orders`, `total_payout`                      |
+
 ### Synthetic Data Generator
 
 To simulate data for initial testing:
@@ -124,6 +147,28 @@ To simulate data for initial testing:
 
 ---
 
+## 🎨 Visual Showcase
+
+### 1. App Home (Before Upload)
+
+!\[App Home Before]\(images/app\ before.png)
+
+### 2. Data Upload (Before)
+
+!\[Data Upload Before]\(images/data\ upload\ before.png)
+
+### 3. Data Upload (After)
+
+!\[Data Upload After]\(images/data\ upload\ after.png)
+
+### 4. App Home (After Upload)
+
+!\[App Home After]\(images/app\ after.png)
+
+> 🔗 **Explore more pages & generate insights:** [Live Dashboard](https://influencertracker-bysuman.streamlit.app)
+
+---
+
 ## 📊 Key Insights
 
 1. **Link Channels Drive Revenue** 🔗
@@ -155,14 +200,26 @@ To simulate data for initial testing:
 ## 📁 Project Structure
 
 ```
-├── Synthetic_data_generator.ipynb   # Generates all CSVs
-├── app.py                          # Streamlit entry point
-├── requirements.txt                # Python dependencies
-├── data/                           # Sample CSV templates
-├── src/                            # Core modules (ingestion, metrics, utils)
-├── docs/images/                    # Screenshots & diagrams
-├── LICENSE                         # MIT License
-└── README.md                       # This documentation
+├── assets/                      # Synthetic generator & sample datasets
+│   ├── Synthetic_data_generator.ipynb
+│   ├── influencers.csv
+│   ├── posts.csv
+│   ├── tracking_data.csv
+│   └── payouts.csv
+├── images/                      # Dashboard screenshots & diagrams
+│   ├── app before.png
+│   ├── app after.png
+│   ├── data upload before.png
+│   ├── data upload after.png
+│   └── data modeling.png
+├── streamlit_app/               # All Streamlit code & configs
+│   ├── .streamlit/
+│   ├── pages/
+│   ├── utils/
+│   ├── app.py
+│   └── requirements.txt
+├── README.md                    # This documentation
+└── LICENSE                      # MIT License
 ```
 
 ---
