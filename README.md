@@ -12,7 +12,7 @@
 2. [📋 Context & Objective](#-context--objective)
 3. [🔄 Project Workflow](#-project-workflow)
 4. [🗂️ Data Model & Synthetic Generator](#️-data-model--synthetic-generator)
-5. [🎨 Visual Showcase - A glimpse of Live Dashboard](#-visual showcase--a glimpse of live dashboard)
+5. [🎨 Visual Showcase - A glimpse of Live Dashboard]
 6. [⚙️ Installation & Setup](#️-installation--setup)
 7. [🚦 Usage Guide](#-usage-guide)
 8. [📊 Key Insights](#-key-insights)
