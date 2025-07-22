@@ -147,11 +147,11 @@ To simulate data for initial testing:
 
 ---
 
-## 🎨 Visual Showcase
+## 🎨 Visual Showcase - A glimpse of Live Dashboard
 
 ### 1. App Home (Before Upload)
 
-!\[App Home Before]\(images/app\ before.png)
+![App Home Before](images/app_before.png)
 
 ### 2. Data Upload (Before)
 
