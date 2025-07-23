@@ -13,7 +13,7 @@
 3. [🔄 Project Workflow](#-project-workflow)
 4. [🗂️ Data Model & Synthetic Generator](#️-data-model--synthetic-generator)
 5. [🎨 Visual Showcase](#-visual-showcase)
-6. - [📊 KPI Documentation](./KPI_Documentation.docx)  
+6. [📊 KPI Documentation](./KPI_Documentation.docx)  
 7. [🚦 Usage Guide](#-usage-guide)
 8. [📊 Key Insights](#-key-insights)
 9. [📁 Project Structure](#-project-structure)
